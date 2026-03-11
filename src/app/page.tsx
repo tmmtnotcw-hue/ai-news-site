@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import FilterBar from "@/components/FilterBar";
 import ClaudeCodeSpotlight from "@/components/ClaudeCodeSpotlight";
+import SkillsDeepDive from "@/components/SkillsDeepDive";
 import TrendingRanking from "@/components/TrendingRanking";
 import AIToolStats from "@/components/AIToolStats";
 import { samplePosts } from "@/data/samplePosts";
@@ -28,6 +29,11 @@ export default function Home() {
         {/* Claude Code Spotlight - Top Section */}
         <div className="mb-6">
           <ClaudeCodeSpotlight posts={samplePosts} />
+        </div>
+
+        {/* Skills Deep Dive - 専用セクション */}
+        <div className="mb-6">
+          <SkillsDeepDive posts={samplePosts} />
         </div>
 
         {/* Filter Bar */}

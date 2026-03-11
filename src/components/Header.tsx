@@ -15,15 +15,21 @@ export default function Header() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-4 text-sm">
-          <span className="text-purple-300">
-            Last updated: {new Date().toLocaleDateString("ja-JP")}
+        <nav className="flex items-center gap-3 text-sm">
+          <a
+            href="#skills-section"
+            className="bg-orange-500/90 hover:bg-orange-400 text-white px-3 py-1.5 rounded-full text-xs font-semibold transition-colors"
+          >
+            ⚡ Skills 特集
+          </a>
+          <span className="text-purple-300 hidden sm:inline">
+            {new Date().toLocaleDateString("ja-JP")}
           </span>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             <span className="inline-block w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             <span className="text-green-300 text-xs">LIVE</span>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
   );

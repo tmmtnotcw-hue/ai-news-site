@@ -33,6 +33,16 @@ export interface Post {
   claudeCodeTag?: ClaudeCodeTag;
 }
 
+export type SkillsCategory =
+  | "デプロイ・CI/CD"
+  | "テスト"
+  | "コード生成"
+  | "レビュー・品質"
+  | "ドキュメント"
+  | "セキュリティ"
+  | "ワークフロー"
+  | "入門・Tips";
+
 export type SortKey = "likes" | "reposts" | "newest";
 
 export interface FilterState {
